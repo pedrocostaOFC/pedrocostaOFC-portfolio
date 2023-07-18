@@ -170,7 +170,7 @@ export const ProjectAreaWrapperColumns = styled("div", {
   },
 });
 
-export  const  ProjectVercelStyle = styled("projectVercelUl", {
+export  const  ProjectVercelStyle = styled("div", {
   display: "flex",
   flexDirection: "row",
   flexFlow: "row-wrap",
@@ -190,7 +190,7 @@ export  const  ProjectVercelStyle = styled("projectVercelUl", {
 
 })
 
-export  const  ProjectVercelLiStyle = styled("projectVercelLi", {
+export  const  ProjectVercelLiStyle = styled("div", {
   img: "50px",
   with:"200px",
 
