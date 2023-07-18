@@ -123,10 +123,10 @@ export const Home = (): JSX.Element => {
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContentVercel>
               <ProjectVercelStyle>
-                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://capstone-ecommerce-pedrocosta-ofc.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/ecomerce.png" alt="" /></a></ProjectVercelLiStyle>
-                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-hub-complet-app.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/hub-hub.png" alt="" /></a></ProjectVercelLiStyle>
-                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://nu-kenzie-iota-kohl.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/nu-kenzie.png" alt="" /></a></ProjectVercelLiStyle>
-                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-burguer-v2-pedrocostaofc.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/burgues.png" alt="" /></a></ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://capstone-ecommerce-pedrocosta-ofc.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/ecomerceSVG.svg" alt="" /></a></ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-hub-complet-app.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/hub-hubSVG.svg" alt="" /></a></ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://nu-kenzie-iota-kohl.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/nu-kenzieSVG.svg" alt="" /></a></ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-burguer-v2-pedrocostaofc.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/burguesSVG.svg" alt="" /></a></ProjectVercelLiStyle>
               </ProjectVercelStyle>
             </ProjectsAreaContentVercel>
           </ProjectAreaWrapperColumns>
@@ -142,7 +142,7 @@ export const Home = (): JSX.Element => {
               e oportunidades que esse mundo vasto da programação me disponibiliza."
             </Text>
               </Text>
-              <img src="./src/public/static/img/img-vercel/patu.png" alt="" />
+              <img src="./src/public/static/img/img-vercel/patuSVG.svg" alt="" />
           </HeaderContentAbout>
         </Container>
       </ProjectsArea>
