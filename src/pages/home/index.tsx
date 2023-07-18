@@ -5,7 +5,7 @@ import { Button } from "@/styles/Buttons";
 
 // Components
 import { Stack } from "@/components/Stack";
-import { Project } from "@/components/Project";
+import { Project} from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
 
 // Data
@@ -18,6 +18,7 @@ import { FaGithub } from "react-icons/fa";
 import {
   Header,
   HeaderContent,
+  HeaderContentAbout,
   HeaderButtonsArea,
   UserImage,
   StackCards,
@@ -25,11 +26,14 @@ import {
   ProjectsAreaSocialMediaMessage,
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
+  ProjectsAreaContentVercel,
+  ProjectVercelStyle,
+  ProjectVercelLiStyle
 } from "./style";
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/pedrocostaOFC/pedrocostaOFC-portfolio`;
 
   return (
     <main id="home">
@@ -47,15 +51,15 @@ export const Home = (): JSX.Element => {
               <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              I'm a{" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                web
               </Text>{" "}
-              creating and{" "}
+              developer{" "}
               <Text as="span" type="heading1" color="brand1">
-                developing
+                <br />Full-
               </Text>{" "}
-              projects
+              Stack.
             </Text>
             <Text type="body1" color="grey2">
               Discover here in this environment, created especially for you, all
@@ -91,7 +95,7 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey4">
+              <Text as="h2" type="heading1" color="grey4">
                 My projects
               </Text>
               <Text as="p" type="body1" color="grey2">
@@ -105,6 +109,41 @@ export const Home = (): JSX.Element => {
               <Project />
             </ProjectsAreaContent>
           </ProjectAreaWrapperColumns>
+        </Container>
+      </ProjectsArea>
+      <ProjectsArea id="projects">
+        <Container>
+          <ProjectAreaWrapperColumns>
+            <ProjectsAreaSocialMediaMessage>
+              <Text as="h2" type="heading1" color="grey4">
+                Projects in Vercel
+                <br/>
+              </Text>
+
+            </ProjectsAreaSocialMediaMessage>
+            <ProjectsAreaContentVercel>
+              <ProjectVercelStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://capstone-ecommerce-pedrocosta-ofc.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/ecomerce.png" alt="" /></a></ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-hub-complet-app.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/hub-hub.png" alt="" /></a></ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://nu-kenzie-iota-kohl.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/nu-kenzie.png" alt="" /></a></ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-burguer-v2-pedrocostaofc.vercel.app/" target="_blank"><img src="./src/public/static/img/img-vercel/burgues.png" alt="" /></a></ProjectVercelLiStyle>
+              </ProjectVercelStyle>
+            </ProjectsAreaContentVercel>
+          </ProjectAreaWrapperColumns>
+          <HeaderContentAbout>
+          <Text as="h1" type="heading1" color="grey4">
+                Sobre Mim.
+                <br/>
+                <Text type="body1" color="grey2">
+              "Eu tenho 26 anos e sou desenvolvedor Back-End/Full-Stack, moro em Santo André-Sp,
+              sou bastante caseiro, adoro jogar jogos online e offline nas horas vagas e amo muito cozinhar,
+              Tenho um hobby, um desafio pessoal que tento sempre ler a documentação de novas tecnologias que ainda
+              não aprende, me formei em Desenvolvimento Web na Kenzie Academy Brasil, e hoje estou aberto a novos desafios
+              e oportunidades que esse mundo vasto da programação me disponibiliza."
+            </Text>
+              </Text>
+              <img src="./src/public/static/img/img-vercel/patu.png" alt="" />
+          </HeaderContentAbout>
         </Container>
       </ProjectsArea>
       <Contacts />

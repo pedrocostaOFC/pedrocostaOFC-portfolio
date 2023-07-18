@@ -42,6 +42,21 @@ export const HeaderContent = styled("div", {
   },
 });
 
+export const HeaderContentAbout = styled("div", {
+  maxWidth: "100%",
+  marginTop: "80px",
+  display: "flex",
+  gap: "$2",
+  "@tablet": {
+    width: "36rem",
+  },
+  "@mobile": {
+    width: "100%",
+    display: "flex",
+    flexDirection: "column"
+  },
+});
+
 export const HeaderButtonsArea = styled(Flex, {
   marginTop: "$2",
 
@@ -137,6 +152,16 @@ export const ProjectsAreaContent = styled("div", {
   },
 });
 
+export const ProjectsAreaContentVercel = styled("div", {
+  width: "100%",
+  gridTemplateColumns: "repeat(2, 1fr)",
+  gridGap: "4rem",
+  "@mobile": {
+    gridTemplateColumns: "1fr",
+    overflow: "hidden",
+  },
+});
+
 export const ProjectAreaWrapperColumns = styled("div", {
   position: "relative",
   alignItems: "flex-start",
@@ -144,3 +169,37 @@ export const ProjectAreaWrapperColumns = styled("div", {
     flexDirection: "column",
   },
 });
+
+export  const  ProjectVercelStyle = styled("projectVercelUl", {
+  display: "flex",
+  flexDirection: "row",
+  flexFlow: "row-wrap",
+  gap: "2rem",
+  justifyContent: "center",
+  marginTop: "92px",
+
+
+  "@mobile": {
+    width: "100%",
+    position: "static",
+    order: "2",
+    marginTop: "5rem",
+    flexDirection: "Column",
+    flexWrap: "nowrap"
+  },
+
+})
+
+export  const  ProjectVercelLiStyle = styled("projectVercelLi", {
+  img: "50px",
+  with:"200px",
+
+
+  "@mobile": {
+    width: "100%",
+    position: "static",
+    order: "2",
+    marginTop: "5rem",
+  },
+
+})

@@ -111,7 +111,7 @@ export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
       3: "2rem",
       4: "3rem",
       5: "4rem",
-      section: "10rem",
+      section: "3rem",
       sectionMobile: "4rem",
     },
     fonts: {
