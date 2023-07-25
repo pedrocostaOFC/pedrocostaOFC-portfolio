@@ -5,7 +5,7 @@ import { Button } from "@/styles/Buttons";
 
 // Components
 import { Stack } from "@/components/Stack";
-import { Project} from "@/components/Project";
+import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
 
 // Data
@@ -117,32 +117,44 @@ export const Home = (): JSX.Element => {
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading1" color="grey4">
                 Projects in Vercel
-                <br/>
+                <br />
               </Text>
 
             </ProjectsAreaSocialMediaMessage>
             <ProjectsAreaContentVercel>
               <ProjectVercelStyle>
-                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://capstone-ecommerce-pedrocosta-ofc.vercel.app/" target="_blank"><img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295420/ecomerce_sq8wfh.png" alt="" /></a></ProjectVercelLiStyle>
-                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-hub-complet-app.vercel.app/" target="_blank"><img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295419/hub-hub_vkmkat.png" alt="" /></a></ProjectVercelLiStyle>
-                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://nu-kenzie-iota-kohl.vercel.app/" target="_blank"><img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295420/nu-kenzie_tuc9ax.png" alt="" /></a></ProjectVercelLiStyle>
-                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-burguer-v2-pedrocostaofc.vercel.app/" target="_blank"><img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295419/burgues_yp6wqb.png" alt="" /></a></ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://capstone-ecommerce-pedrocosta-ofc.vercel.app/" target="_blank"><img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295420/ecomerce_sq8wfh.png" alt="" /></a>
+                  <Text type="body3" color="grey2">
+                    Link GitHub: <a type="body3" href="https://github.com/pedrocostaOFC/capstone-ecommerce-pedrocostaOFC" target="_blank">Repository</a></Text>
+                </ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-hub-complet-app.vercel.app/" target="_blank"><img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295419/hub-hub_vkmkat.png" alt="" /></a>
+                  <Text type="body3" color="grey2">
+                    Link GitHub: <a href="https://github.com/Kenzie-Academy-Brasil-Developers/pedrocostaOFC-Kenzie-Academy-Brasil-Developers-react-entrega-kenzie-hub/tree/main/kenzie-hub-complet-app" target="_blank">Repository</a></Text>
+                </ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://nu-kenzie-iota-kohl.vercel.app/" target="_blank"><img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295420/nu-kenzie_tuc9ax.png" alt="" /></a>
+                  <Text type="body3" color="grey2">
+                    Link GitHub: <a type="body3" href="https://github.com/Kenzie-Academy-Brasil-Developers/pedrocostaOFC-Kenzie-Academy-Brasil-Developers-react-entrega-s1-template-nu-kenzie" target="_blank">Repository</a></Text>
+                </ProjectVercelLiStyle>
+                <ProjectVercelLiStyle className="projectVercelLi"><a href="https://kenzie-burguer-v2-pedrocostaofc.vercel.app/" target="_blank"><img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295419/burgues_yp6wqb.png" alt="" /></a>
+                  <Text type="body3" color="grey2">
+                    Link GitHub: <a href="https://github.com/Kenzie-Academy-Brasil-Developers/Kenzie-Academy-Brasil-Developers-kenzie-burguer-v2-template-pedrocostaOFC" target="_blank">Repository</a></Text>
+                </ProjectVercelLiStyle>
               </ProjectVercelStyle>
             </ProjectsAreaContentVercel>
           </ProjectAreaWrapperColumns>
           <HeaderContentAbout>
-          <Text as="h1" type="heading1" color="grey4">
-                Sobre Mim.
-                <br/>
-                <Text type="body1" color="grey2">
-              "Eu tenho 26 anos e sou desenvolvedor Back-End/Full-Stack, moro em Santo André-Sp,
-              sou bastante caseiro, adoro jogar jogos online e offline nas horas vagas e amo muito cozinhar,
-              Tenho um hobby, um desafio pessoal que tento sempre ler a documentação de novas tecnologias que ainda
-              não aprende, me formei em Desenvolvimento Web na Kenzie Academy Brasil, e hoje estou aberto a novos desafios
-              e oportunidades que esse mundo vasto da programação me disponibiliza."
-            </Text>
+            <Text as="h1" type="heading1" color="grey4">
+              Sobre Mim.
+              <br />
+              <Text type="body1" color="grey2">
+                "Eu tenho 26 anos e sou desenvolvedor Back-End/Full-Stack, moro em Santo André-Sp,
+                sou bastante caseiro, adoro jogar jogos online e offline nas horas vagas e amo muito cozinhar,
+                Tenho um hobby, um desafio pessoal que tento sempre ler a documentação de novas tecnologias que ainda
+                não aprende, me formei em Desenvolvimento Web na Kenzie Academy Brasil, e hoje estou aberto a novos desafios
+                e oportunidades que esse mundo vasto da programação me disponibiliza."
               </Text>
-              <img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295419/patu_gbqtsc.png" alt="" />
+            </Text>
+            <img src="https://res.cloudinary.com/dtdq5o9pe/image/upload/v1690295419/patu_gbqtsc.png" alt="" />
           </HeaderContentAbout>
         </Container>
       </ProjectsArea>

@@ -53,6 +53,14 @@ export const Text = styled("p", {
                 lineHeight: "$text2",
                 ...bodyDefaultConfig
             },
+            body3: {
+                fontSize: "15px",
+                lineHeight: "$text2",
+                padding: "0px",
+                margin: "0px",
+                a: "display: flex",
+                ...bodyDefaultConfig
+            }
         },
         ...colors
     }
