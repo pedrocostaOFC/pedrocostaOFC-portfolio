@@ -174,6 +174,7 @@ export  const  ProjectVercelStyle = styled("div", {
   display: "flex",
   flexDirection: "row",
   flexFlow: "row-wrap",
+  flexWrap: "wrap",
   gap: "2rem",
   justifyContent: "center",
   marginTop: "92px",
@@ -190,8 +191,8 @@ export  const  ProjectVercelStyle = styled("div", {
 
 })
 
-export  const  ProjectVercelLiStyle = styled("div", {
-  img: "50px",
+export  const  ProjectVercelLiStyle = styled("div","a", {
+  img: "50%",
   with:"200px",
 
 
